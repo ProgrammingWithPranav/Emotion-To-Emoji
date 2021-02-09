@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Emotion to Emoji</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
+      integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <h3 id="heading" class="btn btn-warning heading">
+          EMOTION TO EMOJI
+          <br />
+          <span>&#128522;</span>
+          <span>&#128512;</span>
+          <span>&#128532;</span>
+          <span>&#128546;</span>
+          <span>&#128545;</span>
+          <span>&#128548;</span>
+        </h3>
+        <br />
+        <p style="font-size: 22px">Take your selfie to generate an emoji</p>
+
+        <h2 style="color: yellow">Are you Happy?</h2>
+        <h2 style="color: rgb(142, 142, 247)">Are you Sad?</h2>
+        <h2 style="color: red">Are you Angry?</h2>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col sm-12 col-xs-12">
+            <label class="myLabel">Webcam View</label>
+            <div class="giveBorder" id="camera"></div>
+            <br>
+            <button class="btn btn-warning">Capture Image</button>
+          </div>
+          <div class="col-lg-4 col-md-4 col sm-12 col-xs-12">
+            <label class="myLabel">Prediction 1:</label>
+            <br>
+            <br>
+            <label class="myLabel">Prediction 2:</label>
+          </div>
+          <div class="col-lg-4 col-md-4 col sm-12 col-xs-12">
+            <label class="myLabel">Snapshot</label>
+            <div class="giveBorder" id="snapshot"></div>
+            <br>
+            <button class="btn btn-success">Identify Image</button>
+          </div>
+        </div>
+      </center>
+    </div>
+  </body>
+</html>
