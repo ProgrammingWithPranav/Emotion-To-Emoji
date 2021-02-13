@@ -17,11 +17,6 @@
       integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
-      integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
@@ -43,31 +38,40 @@
         <h2 style="color: yellow">Are you Happy?</h2>
         <h2 style="color: rgb(142, 142, 247)">Are you Sad?</h2>
         <h2 style="color: red">Are you Angry?</h2>
-        <br>
-        <br>
-        <br>
+        <br />
+        <br />
+        <br />
 
         <div class="row">
           <div class="col-lg-4 col-md-4 col sm-12 col-xs-12">
             <label class="myLabel">Webcam View</label>
             <div class="giveBorder" id="camera"></div>
-            <br>
-            <button class="btn btn-warning">Capture Image</button>
+            <br />
+            <button class="btn btn-warning" onclick="takeSnapshot()">
+              Capture Image
+            </button>
           </div>
           <div class="col-lg-4 col-md-4 col sm-12 col-xs-12">
             <label class="myLabel">Prediction 1:</label>
-            <br>
-            <br>
+            <br />
+            <br />
             <label class="myLabel">Prediction 2:</label>
           </div>
           <div class="col-lg-4 col-md-4 col sm-12 col-xs-12">
             <label class="myLabel">Snapshot</label>
             <div class="giveBorder" id="snapshot"></div>
-            <br>
+            <br />
             <button class="btn btn-success">Identify Image</button>
           </div>
         </div>
       </center>
     </div>
   </body>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
+    integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
 </html>
