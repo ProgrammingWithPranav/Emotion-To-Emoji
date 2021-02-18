@@ -52,16 +52,27 @@
             </button>
           </div>
           <div class="col-lg-4 col-md-4 col sm-12 col-xs-12">
-            <label class="myLabel">Prediction 1:</label>
+            <label class="myLabel"
+              >Prediction 1: <br />
+              <span id="pred1"></span> <br />
+              <span id="emoji1"></span>
+            </label>
             <br />
             <br />
-            <label class="myLabel">Prediction 2:</label>
+            <label class="myLabel"
+              >Prediction 2: <br />
+              <span id="pred2"></span>
+              <br />
+              <span id="emoji2"></span
+            ></label>
           </div>
           <div class="col-lg-4 col-md-4 col sm-12 col-xs-12">
             <label class="myLabel">Snapshot</label>
             <div class="giveBorder" id="snapshot"></div>
             <br />
-            <button class="btn btn-success">Identify Image</button>
+            <button class="btn btn-success" onClick="check()">
+              Identify Image
+            </button>
           </div>
         </div>
       </center>
